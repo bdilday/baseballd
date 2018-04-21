@@ -1,0 +1,16 @@
+{
+	"name": "baseballd",
+	"authors": [
+		"Ben Dilday"
+	],
+	"dependencies": {
+		"mir": "~>1.1.2",
+		"requests": "~>0.7.4",
+		"mir-algorithm": "~>0.9.5",
+		"dlib": "~>0.12.2",
+		"ggplotd": "~>1.1.4"
+	},
+	"description": "baseball analysis in D",
+	"copyright": "Copyright © 2018, Ben Dilday",
+	"license": "MIT"
+}
