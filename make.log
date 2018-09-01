@@ -1,0 +1,171 @@
+Using dub registry url 'https://code.dlang.org/'
+Refreshing local packages (refresh existing: true)...
+Looking for local package map at /var/lib/dub/packages/local-packages.json
+Looking for local package map at /home/bdilday/.dub/packages/local-packages.json
+Try to load local package map at /home/bdilday/.dub/packages/local-packages.json
+Determined package version using GIT: baseballd ~dev-dubify
+Refreshing local packages (refresh existing: false)...
+Looking for local package map at /var/lib/dub/packages/local-packages.json
+Looking for local package map at /home/bdilday/.dub/packages/local-packages.json
+Try to load local package map at /home/bdilday/.dub/packages/local-packages.json
+  Found dependency mir 1.1.2
+    Found dependency mir-random 0.4.5
+      Found dependency mir-linux-kernel 1.0.0
+      Found dependency mir-algorithm 0.9.5
+  Found dependency requests 0.7.4
+    Found dependency vibe-d 0.8.3
+      Found dependency vibe-d:redis 0.8.3
+        Found dependency vibe-d:http 0.8.3
+          Found dependency vibe-d:tls 0.8.3
+            Found dependency vibe-d:stream 0.8.3
+              Found dependency vibe-d:core 0.8.3
+                Found dependency vibe-d:utils 0.8.3
+                  Found dependency stdx-allocator 2.77.1
+                Found dependency vibe-d:data 0.8.3
+                Found dependency vibe-core 1.4.0
+                  Found dependency eventcore 0.8.34
+                    Found dependency taggedalgebraic 0.10.11
+                    Found dependency libasync 0.8.3
+                      Found dependency memutils 0.4.10
+                Found dependency libevent 2.0.2+2.0.16
+            Found dependency openssl 1.1.6+1.0.1g
+            Found dependency botan 1.12.9
+              Found dependency botan-math 1.0.3
+          Found dependency vibe-d:crypto 0.8.3
+          Found dependency vibe-d:inet 0.8.3
+            Found dependency vibe-d:textfilter 0.8.3
+          Found dependency diet-ng 1.4.5
+      Found dependency vibe-d:mongodb 0.8.3
+      Found dependency vibe-d:web 0.8.3
+      Found dependency vibe-d:mail 0.8.3
+  Found dependency dlib 0.12.2
+  Found dependency ggplotd 1.1.4
+    Found dependency dstats 1.0.5
+    Found dependency cairod 0.0.1-alpha.3+1.10.2
+      Found dependency derelict-ft 1.0.2
+        Found dependency derelict-util 2.1.0
+      Found dependency windows-headers 1.0.1
+      Found dependency x11 1.0.20
+    Found dependency painlesstraits 0.2.0
+    Found dependency color 0.0.6
+    Found dependency dunit 1.0.14
+    Found dependency gtk-d:gtkd 3.3.1
+Refreshing local packages (refresh existing: false)...
+Looking for local package map at /var/lib/dub/packages/local-packages.json
+Looking for local package map at /home/bdilday/.dub/packages/local-packages.json
+Try to load local package map at /home/bdilday/.dub/packages/local-packages.json
+  Found dependency mir 1.1.2
+    Found dependency mir-random 0.4.5
+      Found dependency mir-linux-kernel 1.0.0
+      Found dependency mir-algorithm 0.9.5
+  Found dependency requests 0.7.4
+    Found dependency vibe-d 0.8.3
+      Found dependency vibe-d:redis 0.8.3
+        Found dependency vibe-d:http 0.8.3
+          Found dependency vibe-d:tls 0.8.3
+            Found dependency vibe-d:stream 0.8.3
+              Found dependency vibe-d:core 0.8.3
+                Found dependency vibe-d:utils 0.8.3
+                  Found dependency stdx-allocator 2.77.1
+                Found dependency vibe-d:data 0.8.3
+                Found dependency vibe-core 1.4.0
+                  Found dependency eventcore 0.8.34
+                    Found dependency taggedalgebraic 0.10.11
+                    Found dependency libasync 0.8.3
+                      Found dependency memutils 0.4.10
+                Found dependency libevent 2.0.2+2.0.16
+            Found dependency openssl 1.1.6+1.0.1g
+            Found dependency botan 1.12.9
+              Found dependency botan-math 1.0.3
+          Found dependency vibe-d:crypto 0.8.3
+          Found dependency vibe-d:inet 0.8.3
+            Found dependency vibe-d:textfilter 0.8.3
+          Found dependency diet-ng 1.4.5
+      Found dependency vibe-d:mongodb 0.8.3
+      Found dependency vibe-d:web 0.8.3
+      Found dependency vibe-d:mail 0.8.3
+  Found dependency dlib 0.12.2
+  Found dependency ggplotd 1.1.4
+    Found dependency dstats 1.0.5
+    Found dependency cairod 0.0.1-alpha.3+1.10.2
+      Found dependency derelict-ft 1.0.2
+        Found dependency derelict-util 2.1.0
+      Found dependency windows-headers 1.0.1
+      Found dependency x11 1.0.20
+    Found dependency painlesstraits 0.2.0
+    Found dependency color 0.0.6
+    Found dependency dunit 1.0.14
+    Found dependency gtk-d:gtkd 3.3.1
+Checking for upgrades.
+Using cached upgrade results...
+Generating using build
+Configuring dependent baseballd, deps:"dlib", "ggplotd", "mir-algorithm", "mir-random", "mir-algorithm", "requests"
+  Configuring dependent dlib, deps:
+  Configuring dependent ggplotd, deps:"cairod", "dstats", "dunit", "painlesstraits"
+    Configuring dependent cairod, deps:"derelict-ft", "x11"
+      Configuring dependent derelict-ft, deps:"derelict-util"
+        Configuring dependent derelict-util, deps:
+      Configuring dependent x11, deps:
+    Configuring dependent dstats, deps:
+    Configuring dependent dunit, deps:
+    Configuring dependent painlesstraits, deps:
+  Configuring dependent mir-algorithm, deps:
+  Configuring dependent mir-random, deps:"mir-algorithm", "mir-linux-kernel"
+    Configuring dependent mir-linux-kernel, deps:
+  Configuring dependent requests, deps:
+Performing "debug" build using /home/bdilday/dlang/dmd-2.079.0/linux/bin64/dmd for x86_64.
+dlib 0.12.2: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/dlib-0.12.2/dlib/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-34B29FB262EAE83CC9D230278BC1DE66/.
+Copying target from /home/bdilday/.dub/packages/dlib-0.12.2/dlib/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-34B29FB262EAE83CC9D230278BC1DE66/libdlib.a to /home/bdilday/.dub/packages/dlib-0.12.2/dlib
+derelict-util 2.1.0: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/derelict-util-2.1.0/derelict-util/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-F153B2F6356D79761251E5A5A59F2198/.
+Copying target from /home/bdilday/.dub/packages/derelict-util-2.1.0/derelict-util/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-F153B2F6356D79761251E5A5A59F2198/libDerelictUtil.a to /home/bdilday/.dub/packages/derelict-util-2.1.0/derelict-util/lib
+derelict-ft 1.0.2: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/derelict-ft-1.0.2/derelict-ft/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-E01B6CC12CC2877B76AE3309421748AC/.
+Copying target from /home/bdilday/.dub/packages/derelict-ft-1.0.2/derelict-ft/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-E01B6CC12CC2877B76AE3309421748AC/libDerelictFT.a to /home/bdilday/.dub/packages/derelict-ft-1.0.2/derelict-ft/lib
+x11 1.0.20: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/x11-1.0.20/x11/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-7E5B15E074C87FB196851D2546647C34/.
+Copying target from /home/bdilday/.dub/packages/x11-1.0.20/x11/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-7E5B15E074C87FB196851D2546647C34/libx11.a to /home/bdilday/.dub/packages/x11-1.0.20/x11
+cairod 0.0.1-alpha.3+1.10.2: target for configuration "static-custom-posix" is up to date.
+Using existing build in /home/bdilday/.dub/packages/cairod-0.0.1-alpha.3_1.10.2/cairod/.dub/build/static-custom-posix-debug-linux.posix-x86_64-dmd_2079-4D03E22128545F7B37A66A7F7088F59C/.
+Copying target from /home/bdilday/.dub/packages/cairod-0.0.1-alpha.3_1.10.2/cairod/.dub/build/static-custom-posix-debug-linux.posix-x86_64-dmd_2079-4D03E22128545F7B37A66A7F7088F59C/libcairoD.a to /home/bdilday/.dub/packages/cairod-0.0.1-alpha.3_1.10.2/cairod
+dstats 1.0.5: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/dstats-1.0.5/dstats/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-47358189A1E97BE0BF1423AF4406D323/.
+Copying target from /home/bdilday/.dub/packages/dstats-1.0.5/dstats/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-47358189A1E97BE0BF1423AF4406D323/libdstats.a to /home/bdilday/.dub/packages/dstats-1.0.5/dstats
+dunit 1.0.14: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/dunit-1.0.14/dunit/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-6094FF159BE5337F68530703CAA1532C/.
+Copying target from /home/bdilday/.dub/packages/dunit-1.0.14/dunit/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-6094FF159BE5337F68530703CAA1532C/libdunit.a to /home/bdilday/.dub/packages/dunit-1.0.14/dunit
+painlesstraits 0.2.0: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/painlesstraits-0.2.0/painlesstraits/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-781314ED0A6C8D7B52704B5F25256251/.
+Copying target from /home/bdilday/.dub/packages/painlesstraits-0.2.0/painlesstraits/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-781314ED0A6C8D7B52704B5F25256251/libpainlesstraits.a to /home/bdilday/.dub/packages/painlesstraits-0.2.0/painlesstraits
+ggplotd 1.1.4: target for configuration "default" is up to date.
+Using existing build in /home/bdilday/.dub/packages/ggplotd-1.1.4/ggplotd/.dub/build/default-debug-linux.posix-x86_64-dmd_2079-94A8A228070DD876CBF06104507656E3/.
+Copying target from /home/bdilday/.dub/packages/ggplotd-1.1.4/ggplotd/.dub/build/default-debug-linux.posix-x86_64-dmd_2079-94A8A228070DD876CBF06104507656E3/libggplotd.a to /home/bdilday/.dub/packages/ggplotd-1.1.4/ggplotd
+mir-algorithm 0.9.5: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/mir-algorithm-0.9.5/mir-algorithm/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-0F351F9656893D753F3E42463FB2FCB8/.
+Copying target from /home/bdilday/.dub/packages/mir-algorithm-0.9.5/mir-algorithm/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-0F351F9656893D753F3E42463FB2FCB8/libmir-algorithm.a to /home/bdilday/.dub/packages/mir-algorithm-0.9.5/mir-algorithm
+mir-linux-kernel 1.0.0: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/mir-linux-kernel-1.0.0/mir-linux-kernel/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-445DDEC81C95A76B7CBD8EA1FDE06D55/.
+Copying target from /home/bdilday/.dub/packages/mir-linux-kernel-1.0.0/mir-linux-kernel/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-445DDEC81C95A76B7CBD8EA1FDE06D55/libmir-linux-kernel.a to /home/bdilday/.dub/packages/mir-linux-kernel-1.0.0/mir-linux-kernel
+mir-random 0.4.5: target for configuration "library" is up to date.
+Using existing build in /home/bdilday/.dub/packages/mir-random-0.4.5/mir-random/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-677868149E305E2DD104789287512DB3/.
+Copying target from /home/bdilday/.dub/packages/mir-random-0.4.5/mir-random/.dub/build/library-debug-linux.posix-x86_64-dmd_2079-677868149E305E2DD104789287512DB3/libmir-random.a to /home/bdilday/.dub/packages/mir-random-0.4.5/mir-random
+requests 0.7.4: target for configuration "std" is up to date.
+Using existing build in /home/bdilday/.dub/packages/requests-0.7.4/requests/.dub/build/std-debug-linux.posix-x86_64-dmd_2079-E5829B656CC8B246E127181633F12B0A/.
+Copying target from /home/bdilday/.dub/packages/requests-0.7.4/requests/.dub/build/std-debug-linux.posix-x86_64-dmd_2079-E5829B656CC8B246E127181633F12B0A/librequests.a to /home/bdilday/.dub/packages/requests-0.7.4/requests
+Target '/home/bdilday/github/baseballd/.dub/build/application-debug-linux.posix-x86_64-dmd_2079-1EAD118E292D7D659F6728A57ADB9D5E/baseballd' doesn't exist, need rebuild.
+baseballd ~dev-dubify: building configuration "application"...
+Using pkg-config to resolve library flags for cairo.
+Using direct -l... flags for X11, dl.
+/home/bdilday/dlang/dmd-2.079.0/linux/bin64/dmd -c -of.dub/build/application-debug-linux.posix-x86_64-dmd_2079-1EAD118E292D7D659F6728A57ADB9D5E/baseballd.o -debug -g -w -version=Have_baseballd -version=Have_mir -version=Have_dlib -version=Have_ggplotd -version=Have_mir_algorithm -version=Have_mir_random -version=Have_mir_algorithm -version=Have_requests -version=CairoPNG -version=CairoPDFSurface -version=CairoSVGSurface -version=Have_color -version=Have_cairod -version=Have_dstats -version=Have_dunit -version=Have_painlesstraits -version=Have_derelict_ft -version=Have_x11 -version=Have_derelict_util -version=Have_mir_linux_kernel -Isource/ -I../../.dub/packages/mir-1.1.2/mir/source/ -I../../.dub/packages/dlib-0.12.2/dlib -I../../.dub/packages/ggplotd-1.1.4/ggplotd/source/ -I../../.dub/packages/color-0.0.6/color -I../../.dub/packages/cairod-0.0.1-alpha.3_1.10.2/cairod/src/ -I../../.dub/packages/derelict-ft-1.0.2/derelict-ft/source/ -I../../.dub/packages/derelict-util-2.1.0/derelict-util/source/ -I../../.dub/packages/x11-1.0.20/x11/source/ -I../../.dub/packages/dstats-1.0.5/dstats/source/ -I../../.dub/packages/dunit-1.0.14/dunit/source/ -I../../.dub/packages/painlesstraits-0.2.0/painlesstraits/source/ -I../../.dub/packages/mir-algorithm-0.9.5/mir-algorithm/source/ -I../../.dub/packages/mir-random-0.4.5/mir-random/source/ -I../../.dub/packages/mir-linux-kernel-1.0.0/mir-linux-kernel/source/ -I../../.dub/packages/requests-0.7.4/requests/tests -I../../.dub/packages/requests-0.7.4/requests/source source/app.d source/re24.d source/traj.d ../../.dub/packages/mir-1.1.2/mir/source/mir/glas/l1.d ../../.dub/packages/mir-1.1.2/mir/source/mir/glas/l2.d ../../.dub/packages/mir-1.1.2/mir/source/mir/glas/package.d ../../.dub/packages/mir-1.1.2/mir/source/mir/model/lda/hoffman.d ../../.dub/packages/mir-1.1.2/mir/source/mir/sparse/blas/axpy.d ../../.dub/packages/mir-1.1.2/mir/source/mir/sparse/blas/dot.d ../../.dub/packages/mir-1.1.2/mir/source/mir/sparse/blas/gemm.d ../../.dub/packages/mir-1.1.2/mir/source/mir/sparse/blas/gemv.d ../../.dub/packages/mir-1.1.2/mir/source/mir/sparse/blas/package.d ../../.dub/packages/mir-1.1.2/mir/source/mir/sparse/package.d -vcolumns
+source/traj.d(11,8): Error: undefined identifier `launch_speed`
+source/traj.d(11,8): Error: undefined identifier `launch_angle`
+source/traj.d(11,8): Error: undefined identifier `launch_phi`
+source/traj.d(11,8): Error: undefined identifier `dt`
+source/traj.d(11,8): Error: undefined identifier `pars`, did you mean function `puts`?
+source/traj.d(11,8): Error: undefined identifier `N`
+../../.dub/packages/ggplotd-1.1.4/ggplotd/source/ggplotd/guide.d(439,12): Deprecation: module `ggplotd.colour` member `RGBA` is not visible from module `guide`
+../../.dub/packages/ggplotd-1.1.4/ggplotd/source/ggplotd/geom.d(50,12): Deprecation: module `ggplotd.guide` member `GuideStore` is not visible from module `geom`
+../../.dub/packages/ggplotd-1.1.4/ggplotd/source/ggplotd/ggplotd.d(520,12): Deprecation: module `ggplotd.legend` member `Legend` is not visible from module `ggplotd`
+FAIL .dub/build/application-debug-linux.posix-x86_64-dmd_2079-1EAD118E292D7D659F6728A57ADB9D5E/ baseballd executable
+/home/bdilday/dlang/dmd-2.079.0/linux/bin64/dmd failed with exit code 1.

@@ -2,6 +2,6 @@ module re24;
 
 import std.stdio;
 
-void main(string[] args){
+void re24(string[] args){
 
 }
