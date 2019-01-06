@@ -23,3 +23,7 @@ docs/
 # Code coverage
 *.lst
 .idea/
+
+Rsrc/
+D/
+*.png

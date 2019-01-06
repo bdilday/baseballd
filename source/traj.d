@@ -7,26 +7,31 @@ import std.conv : to;
 
 immutable double pi = 3.141592653590;
 
-void main(string[] args) {
 
-  double launch_angle;
-  double launch_speed;
+double ball_range(double launch_speed, double launch_angle, double launch_phi, double dt, TrajectoryParameters pars, int N) {
+  auto trajectory = trajectory1(launch_speed, launch_angle, launch_phi, dt, pars, N);
+  Vec3 v1, v2;
+  double t1, t2, y1, y2, dxdt, dydt, dzdt, delt, newy, newx;
+  t1 = trajectory.t[$-2];
+  t2 = trajectory.t[$-1];
+  v1 = trajectory.position[$-2];
+  v2 = trajectory.position[$-1];
+  dxdt = (v2.x - v1.x)/(t2-t1);
+  dydt = (v2.y - v1.y)/(t2-t1);
+  dzdt = (v2.z - v1.z)/(t2-t1);
+  delt = -v1.z/dzdt;
+  newx = v1.x + delt * dxdt;
+  newy = v1.y + delt * dydt;
+  return sqrt(newx * newx + newy * newy);
+}
+
+TrajectoryResult tmp(string[] args) {
+
+  double launch_angle = 20;
+  double launch_speed = 90;
   double launch_phi = 0.0;
   double dt = 0.0001;
   int N = 1000000;
-
-  auto helpInformation = getopt(
-     args,
-     "la", &launch_angle,
-     "lv", &launch_speed,
-     "dt", &dt,
-     "N", &N
-     );
-
-  if (helpInformation.helpWanted || isNaN(launch_speed) || isNaN(launch_angle)) {
-    writeln(help_message);
-    return;
-  }
 
   TrajectoryParameters pars;
   pars.launch_angle = launch_angle;
@@ -36,6 +41,7 @@ void main(string[] args) {
   auto trajectory = trajectory1(launch_speed, launch_angle, launch_phi, dt, pars, N);
 
   writeln(trajectory.print);
+  return trajectory;
 }
 
 @property char[] help_message() {
