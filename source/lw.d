@@ -14,7 +14,7 @@ alias Outs = int;
 alias StateVector = State[];
 alias fastReachable = memoize!ReachableStates;
 
-void main(string[] args){
+void lw_main(string[] args){
 
     StateVector state_vec;
     real[BaseOutState] bo_vec;
