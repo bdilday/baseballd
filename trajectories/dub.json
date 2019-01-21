@@ -3,6 +3,9 @@
 		"Ben Dilday"
 	],
 	"copyright": "Copyright © 2019, Ben Dilday",
+	"dependencies": {
+		"ggplotd": "~>1.1.6",
+	},
 	"description": "Batted ball trajectories in D",
 	"license": "MIT",
 	"name": "trajectories"
