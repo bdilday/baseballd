@@ -61,18 +61,14 @@ struct BaseState
         b2 = this.bases[1];
         b3 = this.bases[2];
 
-        if (b1 && b2 && 
-            run_event_transition.take_third && 
-            !run_event_transition.take_home) {
-                throw new BaseOccupiedException("Attempt to take third when not open");
-            }
-
         // take home?
         b3 = run_event_transition.take_home ? 0 : b3;
 
         // take third?
-        if (run_event_transition.take_third && b3) {
-            throw new BaseOccupiedException("Attempt to take third when not open");
+        bool take_third = run_event_transition.take_third;
+        if (take_third && b3) {
+            //throw new BaseOccupiedException("Attempt to take third when not open");
+            take_third = false;
         }
         b3 = run_event_transition.take_third ? b2 : b3;
         

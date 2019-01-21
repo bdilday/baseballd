@@ -1,4 +1,6 @@
 
+module game;
+
 import events;
 import states;
 
