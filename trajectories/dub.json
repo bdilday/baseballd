@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Ben Dilday"
+	],
+	"copyright": "Copyright © 2019, Ben Dilday",
+	"description": "Batted ball trajectories in D",
+	"license": "MIT",
+	"name": "trajectories"
+}

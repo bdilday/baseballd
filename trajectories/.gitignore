@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/trajectories
+trajectories.so
+trajectories.dylib
+trajectories.dll
+trajectories.a
+trajectories.lib
+trajectories-test-*
+*.exe
+*.o
+*.obj
+*.lst

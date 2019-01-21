@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/linear_weights
+linear_weights.so
+linear_weights.dylib
+linear_weights.dll
+linear_weights.a
+linear_weights.lib
+linear_weights-test-*
+*.exe
+*.o
+*.obj
+*.lst

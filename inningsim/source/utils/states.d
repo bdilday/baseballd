@@ -26,14 +26,14 @@ struct BaseState
         else if (hit_event ==  HitEvent.xbb)
         {
             b1 = 1;
-            b2 = this.bases[0] == 1 ? 1 : 0;
-            b3 = this.bases[0] == 1 && this.bases[1] == 1 ? 1 : 0;
+            b2 = this.bases[0] == 1 ? 1 : this.bases[1];
+            b3 = this.bases[0] == 1 && this.bases[1] == 1 ? 1 : this.bases[2];
         }
         else if (hit_event ==  HitEvent.x1b)
         {
             b1 = 1;
             b2 = this.bases[0] == 1 ? 1 : 0;
-            b3 = this.bases[0] == 1 && this.bases[1] == 1 ? 1 : 0;
+            b3 = this.bases[1] == 1 ? 1 : 0;
         }
         else if (hit_event ==  HitEvent.x2b)
         {

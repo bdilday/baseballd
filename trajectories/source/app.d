@@ -3,7 +3,7 @@ import std.format;
 import std.algorithm : map;
 import traj;
 
-    import ggplotd.colour : colourGradient;
+import ggplotd.colour : colourGradient;
 
 import ggplotd.aes : aes;
 import ggplotd.axes : xaxisLabel, yaxisLabel;

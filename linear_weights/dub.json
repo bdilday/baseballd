@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"Ben Dilday"
+	],
+	"copyright": "Copyright © 2019, Ben Dilday",
+	"description": "Linear weights in D",
+	"license": "MIT",
+	"name": "linear_weights"
+}
